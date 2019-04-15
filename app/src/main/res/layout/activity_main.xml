@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/black"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/countRelLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/countTextBackground"
+            android:layout_width="344dp"
+            android:layout_height="149dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/counterdisplay"
+             />
+
+        <TextView
+            android:id="@+id/countText"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/counterdisplaystyle"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+             />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fedoracoin"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:background="@drawable/fedoracoin"
+        app:layout_constraintBottom_toBottomOf="@+id/countRelLay"
+        app:layout_constraintStart_toStartOf="@+id/countRelLay"
+        app:layout_constraintTop_toTopOf="@+id/countRelLay"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <RelativeLayout
+        android:id="@+id/ImageRelLay"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="161dp"
+        app:layout_constraintBottom_toTopOf="@+id/table"
+        >
+
+        <ImageButton
+            android:id="@+id/countButton"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/hatImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/handImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignBottom="@+id/hatImage"
+            android:layout_marginBottom="0dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/table"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/casinoButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fifty"
+        app:layout_constraintStart_toEndOf="@+id/spacer"
+        app:layout_constraintTop_toTopOf="@+id/table" />
+
+    <ImageButton
+        android:id="@+id/shopButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fedorashop"
+        app:layout_constraintEnd_toStartOf="@+id/handShop"
+        app:layout_constraintTop_toTopOf="@+id/table" />
+
+    <ImageButton
+        android:id="@+id/fightButton"
+        android:layout_width="72dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/campaignbuttonup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/casinoButton"
+        app:layout_constraintTop_toTopOf="@+id/table"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/handShop"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/handshop"
+        app:layout_constraintEnd_toStartOf="@+id/spacer"
+        app:layout_constraintTop_toTopOf="@+id/table" />
+
+    <TextView
+        android:id="@+id/spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageRelLay" />
+
+    <TextView
+        android:id="@+id/fsText"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="Fedora Shop"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toStartOf="@+id/handShop"
+        app:layout_constraintTop_toBottomOf="@+id/shopButton" />
+
+    <TextView
+        android:id="@+id/IdleshopText"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Idle Shop"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toEndOf="@+id/handShop"
+        app:layout_constraintTop_toBottomOf="@+id/handShop" />
+
+    <TextView
+        android:id="@+id/casinoText"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="50/50"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintStart_toEndOf="@+id/spacer"
+        app:layout_constraintTop_toTopOf="@+id/casinoButton" />
+
+    <TextView
+        android:id="@+id/casinoText2"
+        android:layout_width="84dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:gravity="center"
+        android:text="Fight Evil"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintStart_toEndOf="@+id/casinoButton"
+        app:layout_constraintTop_toBottomOf="@+id/fightButton" />
+
+    <TextView
+        android:id="@+id/plustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:fontFamily="@font/press_start_2p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="@+id/ImageRelLay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
